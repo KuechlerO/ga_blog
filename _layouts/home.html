@@ -6,5 +6,6 @@
 {% endfor %}
 
 {% for post in site.posts %}
-  <li><a style="{% if page.url == post.url %}color:red{%endif%}" href="{{ post.url }}"> {{ post.title }}</a></li>
+  Test <br>
+  <li><a style="{% if page.url == post.url %}color:red{%endif%}" href="{{ post.url | relative_url }}"> {{ post.title }}</a></li>
 {% endfor %}
